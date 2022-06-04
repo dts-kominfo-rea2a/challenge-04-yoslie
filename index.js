@@ -12,7 +12,7 @@ const createDate = (dates, index) => {
   let data = [];
 
   for (let i = 0; i < dates.length; i++) {
-    data.push(Date.parse(dates[i]) / 1000).toString();
+    data.push((Date.parse(dates[i]) / 1000).toString());
   }
 
   if (index && index >= 0) {
