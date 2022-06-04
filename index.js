@@ -9,14 +9,14 @@ const dates = [
 
 // TODO: Buatlah fungsi createDate
 const createDate = (dates, index) => {
-  let data = [];
+  const data = [];
 
   for (let i = 0; i < dates.length; i++) {
     const convertedDate = (Date.parse(dates[i]) / 1000).toString();
     data.push(convertedDate);
   }
 
-  if (index && index >= 0) {
+  if (index >= 0) {
     return data[index];
   } else {
     const allDate = data.sort().join("-");
